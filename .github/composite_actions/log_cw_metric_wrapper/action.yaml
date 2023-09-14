@@ -88,7 +88,7 @@ runs:
         job-status: ${{ inputs.job-status }}
         job-identifier: ${{ inputs.job-identifier }}
         github-token: ${{ inputs.github-token }}
-        repo: $${{ github.repository }}
+        repo: ${{ github.repository }}
         run-id: ${{ github.run_id }}
         metric-name: "github_metric_1.0"
         test-type: ${{ inputs.test-type }}
