@@ -35,24 +35,6 @@ Future<void> launch() async {
   final platform = core.getInput('platform');
   final platformVersion = core.getInput('platform-version');
 
-/*
-  print('''{
-    metricName: $metricName,
-    isFailed: $isFailed,
-    testType: $testType,
-    category: $category,
-    workflowName: $workflowName,
-    framework: $framework,
-    flutterDartChannel: $flutterDartChannel,
-    dartVersion: $dartVersion,
-    flutterVersion: $flutterVersion,
-    dartCompiler: $dartCompiler,
-    platform: $platform,
-    platformVersion: $platformVersion,
-    failingStep: $failingStep,
-  }''');
-  */
-
   final value = isFailed ? '1' : '0';
 
   if (category.contains('/')) {
